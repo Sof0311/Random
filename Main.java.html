@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.company</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">Main {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s1">Customer aCustomer = </span><span class="s0">new </span><span class="s1">Customer(</span><span class="s2">&quot;Sofus&quot;</span><span class="s0">,</span><span class="s3">1000</span><span class="s0">,</span><span class="s3">5000</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">aCustomer.deposit(</span><span class="s3">5000</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">aCustomer.withdraw(</span><span class="s3">3000</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(aCustomer.getBalance())</span><span class="s0">;</span>
+
+        <span class="s1">Customer aCustomer1 = </span><span class="s0">new </span><span class="s1">Customer(</span><span class="s2">&quot;David&quot;</span><span class="s0">,</span><span class="s3">100</span><span class="s0">,</span><span class="s3">500000</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">aCustomer.deposit(</span><span class="s3">50000</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">aCustomer.withdraw(</span><span class="s3">30300</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(aCustomer.getBalance())</span><span class="s0">;</span>
+
+        <span class="s1">Customer aCustomer2 = </span><span class="s0">new </span><span class="s1">Customer(</span><span class="s2">&quot;Nicolaj&quot;</span><span class="s0">,</span><span class="s3">1010</span><span class="s0">,</span><span class="s3">50</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">aCustomer.deposit(</span><span class="s3">500</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">aCustomer.withdraw(</span><span class="s3">30</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(aCustomer.getBalance())</span><span class="s0">;</span>
+
+        <span class="s1">Customer aCustomer3 = </span><span class="s0">new </span><span class="s1">Customer(</span><span class="s2">&quot;Nemeth&quot;</span><span class="s0">,</span><span class="s3">40</span><span class="s0">,</span><span class="s3">500</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">aCustomer.deposit(</span><span class="s3">99</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">aCustomer.withdraw(</span><span class="s3">20</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(aCustomer.getBalance())</span><span class="s0">;</span>
+
+        <span class="s1">Customer aCustomer4 = </span><span class="s0">new </span><span class="s1">Customer(</span><span class="s2">&quot;Mikkel&quot;</span><span class="s0">,</span><span class="s3">101</span><span class="s0">,</span><span class="s3">400</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">aCustomer.deposit(</span><span class="s3">340</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">aCustomer.withdraw(</span><span class="s3">24</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(aCustomer.getBalance())</span><span class="s0">;</span>
+
+        <span class="s1">CustomerDatabase database = </span><span class="s0">new </span><span class="s1">CustomerDatabase()</span><span class="s0">;</span>
+        <span class="s1">database.addCustomer(aCustomer)</span><span class="s0">;</span>
+        <span class="s1">database.addCustomer(aCustomer1)</span><span class="s0">;</span>
+        <span class="s1">database.addCustomer(aCustomer2)</span><span class="s0">;</span>
+        <span class="s1">database.addCustomer(aCustomer3)</span><span class="s0">;</span>
+        <span class="s1">database.addCustomer(aCustomer4)</span><span class="s0">;</span>
+        <span class="s1">database.gdpr()</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+<span class="s1">}</span>
+
+
+</pre>
+</body>
+</html>
